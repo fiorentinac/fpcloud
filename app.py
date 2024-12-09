@@ -10,10 +10,11 @@ app.secret_key = 'many random bytes'
 
 #open conection
 db = connector.connect(
-    host = 'localhost',
-    user = 'root',
-    passwd = '',
-    database = 'profilcc'
+    user="ccweb", 
+    password="Cloudcomputing1", 
+    host="webfpcc.mysql.database.azure.com", 
+    port=3306, 
+    database="profilcc"
 )
 
 if db.is_connected():
